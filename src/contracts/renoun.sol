@@ -89,8 +89,6 @@ contract Renoun is ERC721 {
     string _commitHash;
     string _repositoryOwner;
     string _repositoryName;
-    uint256 _repositoryStars;
-    uint256 _repositoryContributors;
   }
 
   mapping(uint256 => address) private _ownership;
@@ -154,9 +152,7 @@ contract Renoun is ERC721 {
       _pullRequestCreatorUsername,
       _commitHash,
       repositoryOwner,
-      repositoryName,
-      repositoryStars,
-      repositoryContributors
+      repositoryName
     );
     totalSupply++;
     _ownership[totalSupply] = _to;
@@ -286,8 +282,8 @@ contract Renoun is ERC721 {
       _contribution._commitHash,
       _contribution._repositoryOwner,
       _contribution._repositoryName,
-      _contribution._repositoryStars,
-      _contribution._repositoryContributors
+      repositoryStars,
+      repositoryContributors
     );
   }
 }
