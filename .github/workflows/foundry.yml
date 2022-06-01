@@ -15,5 +15,6 @@ jobs:
       - uses: foundry-rs/foundry-toolchain@v1
         with:
           version: nightly
-      - run: |
+      - working_directory: /src
+        run: |
           forge test -vvv --gas-report
