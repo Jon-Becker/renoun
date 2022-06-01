@@ -12,7 +12,7 @@
   - BadgeRenderer -> [0x76dd7b6e560f08acce65dbc6113f3e2f5f91577f](https://optimistic.etherscan.io/address/0x76dd7b6e560f08acce65dbc6113f3e2f5f91577f)
   - Renoun -> [0x48933e1235529732eb8957ab64f4093d66a7e841](https://optimistic.etherscan.io/address/0x48933e1235529732eb8957ab64f4093d66a7e841)
 
-  Check out tokenURI() for 4+, The renderer was broken before then.
+  Check out [`tokenURI()`](https://optimistic.etherscan.io/address/0x48933e1235529732eb8957ab64f4093d66a7e841#readContract) for `_tokenIds` 4 and above (the renderer was broken before then).
 
 # Installation
   
@@ -42,5 +42,4 @@ In order for the GitHub action to work properly, the Pull Request must be closed
 For a full demo, you can check out [Pull Request #3](https://github.com/Jon-Becker/renoun/pull/3)
 
 ### Credits
-
   - Achal ( SVG Design ) https://twitter.com/achalvs
