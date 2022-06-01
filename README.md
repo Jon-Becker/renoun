@@ -21,7 +21,7 @@
     git clone https://github.com/Jon-Becker/renoun.git .
     ```
 
-  - Deploy both the ``BadgeRenderer.sol`` and ``renoun.sol`` contracts onto your chain of choice The renderer contract is very large, 10kb+, so I recommend deploying on a L2.
+  - Deploy both the ``BadgeRenderer.sol`` and ``renoun.sol`` contracts onto your chain of choice. The renderer contract is very large, 10kb+, so I recommend deploying on a L2.
     - When deploying renoun.sol, you'll need to specify the deployed renderer address
 
   - On your repository of choice, set up 3 [GitHub Secrets](https://docs.github.com/en/actions/security-guides/encrypted-secrets)
