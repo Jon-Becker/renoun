@@ -55,7 +55,9 @@ if re.search(r"0x[0-9a-fA-F]{40}", PULL_REQUEST_BODY):
     ).buildTransaction(
         {
             "from": operator.address,
-            "nonce": web3.eth.getTransactionCount(operator.address)
+            "nonce": web3.eth.getTransactionCount(operator.address),
+            "gasPrice": web3.eth.gas_price,
+            "chainId": 10,
         }
     )
 
