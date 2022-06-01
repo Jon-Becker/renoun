@@ -29,10 +29,7 @@ jobs:
           cd src/scripts
           python3 -m pip install -r requirements.txt
 
-      - name: Mint GitHub Badge
-        run: |
-          cd src/scripts
-          python3 main.py
+      - name: Mint
         env:
           RPC_URL: ${{ secrets.RPC_URL }}
           ADDITIONS: ${{ github.event.pull_request.additions }}
@@ -47,3 +44,5 @@ jobs:
           RENOUN_DEPLOYMENT_ADDRESS: ${{ secrets.DEPLOYMENT_ADDRESS }}
           PULL_REQUEST_CREATOR_USERNAME: ${{ github.event.pull_request.user.login }}
           PULL_REQUEST_CREATOR_PICTURE_URL: ${{ github.event.pull_request.user.avatar_url }}
+        run: |
+          python3 src/scripts/main.py
