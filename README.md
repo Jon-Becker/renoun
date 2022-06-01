@@ -42,5 +42,4 @@ In order for the GitHub action to work properly, the Pull Request must be closed
 For a full demo, you can check out [Pull Request #3](https://github.com/Jon-Becker/renoun/pull/3)
 
 ### Credits
-
   - Achal ( SVG Design ) https://twitter.com/achalvs
