@@ -4,7 +4,7 @@ pragma solidity ^0.8.13;
 
 import "forge-std/Test.sol";
 import "../BadgeRenderer.sol";
-import "../Renoun.sol";
+import "../renoun.sol";
 
 contract RenounTest is Test {
     Renoun renoun;
