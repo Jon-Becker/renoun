@@ -13,4 +13,5 @@ jobs:
         with:
           submodules: recursive
       - uses: foundry-rs/foundry-toolchain@v1
-      - run: forge test -vvv --gas-report
+      - run: forge test -vvv
+      - run: forge snapshot >> $GITHUB_STEP_SUMMARY
