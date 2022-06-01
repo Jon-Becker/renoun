@@ -65,6 +65,8 @@ contract Renoun is ERC721 {
   uint256 public  totalSupply;
   address private _admin;
   address private _rendererAddress;
+  uint256 public repositoryStars;
+  uint256 public repositoryContributors;
 
   /// @param _pullRequestID The ID of the pull request
   /// @param _pullRequestTitle The title of the pull request
@@ -140,6 +142,9 @@ contract Renoun is ERC721 {
     require(_to != address(0), "Renoun: Cannot mint to the null address");
     require(_pullRequestID > 0, "Renoun: Pull request ID must be greater than 0");
 
+    repositoryStars = _repositoryStars;
+    repositoryContributors = _repositoryContributors;
+
     Contribution memory _contribution = Contribution(
       _pullRequestID,
       _pullRequestTitle,
@@ -150,8 +155,8 @@ contract Renoun is ERC721 {
       _commitHash,
       repositoryOwner,
       repositoryName,
-      _repositoryStars,
-      _repositoryContributors
+      repositoryStars,
+      repositoryContributors
     );
     totalSupply++;
     _ownership[totalSupply] = _to;
