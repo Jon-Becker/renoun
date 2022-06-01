@@ -108,7 +108,7 @@ contract BadgeRenderer {
   }
 
   /// @notice Formats an integer to a shortened, less precise string.
-  ///           For example, 1200 becomes 1.2k, 98372 becomes 98.3k, etc.
+  ///           For example, 1200 becomes 1.2k, 98372 becomes 98.3k, etc...
   /// @param _integerAsUint The integer to format
   /// @param _precision The number of decimal places to include in the string
   /// @return The formatted string
