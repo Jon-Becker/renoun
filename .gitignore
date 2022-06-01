@@ -7,5 +7,4 @@ pytest_cache/*
 script
 .DS_Store
 
-foundry.toml
 .env
