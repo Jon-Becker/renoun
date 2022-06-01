@@ -1,0 +1,12 @@
+lib
+lib/*
+out
+out/*
+cache
+cache/*
+pytest_cache
+pytest_cache/*
+script
+
+foundry.toml
+.env
