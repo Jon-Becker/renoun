@@ -37,7 +37,7 @@
 
 In order for the GitHub action to work properly, the Pull Request must be closed and merged. It must also contain a 20 byte Ethereum address, which ``main.py`` will extract from the pull request and mint the token to.
 
-For a full demo, you can check out [Pull Request #1](https://github.com/Jon-Becker/renoun/pull/1)
+For a full demo, you can check out [Pull Request #3](https://github.com/Jon-Becker/renoun/pull/3)
 
 ### Credits
 
