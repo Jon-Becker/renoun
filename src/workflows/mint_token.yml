@@ -12,7 +12,7 @@ permissions:
 
 jobs:
   upload:
-    name: Upload Lambda
+    name: Mint GitHub Badge
     runs-on: ubuntu-latest
     if: github.event.pull_request.merged == true
     steps:
