@@ -3,8 +3,8 @@
 pragma solidity ^0.8.13;
 
 import "forge-std/Test.sol";
-import {BadgeRenderer} from "../contracts/BadgeRenderer.sol";
-import {Renoun} from "../contracts/Renoun.sol";
+import {BadgeRenderer} from "../BadgeRenderer.sol";
+import {Renoun} from "../Renoun.sol";
 
 contract RenounTest is Test {
     Renoun renoun;
