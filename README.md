@@ -7,7 +7,7 @@
 
   Renoun is a project inspired by the work of @achalvs which allows for automatic minting of non-transferrable tokens on Ethereum based chains.
 
-  I've deployed the contracts on Optimism for free use, and for demonstration purposes. Feel free to open a Pull Request to this repository to test out the minting.
+  I've deployed the contracts on Optimism for free use, and for demonstration purposes. Feel free to open a Pull Request to this repository to test out the minting!
 
   - BadgeRenderer -> [0x76dd7b6e560f08acce65dbc6113f3e2f5f91577f](https://optimistic.etherscan.io/address/0x76dd7b6e560f08acce65dbc6113f3e2f5f91577f)
   - Renoun -> [0x48933e1235529732eb8957ab64f4093d66a7e841](https://optimistic.etherscan.io/address/0x48933e1235529732eb8957ab64f4093d66a7e841)
