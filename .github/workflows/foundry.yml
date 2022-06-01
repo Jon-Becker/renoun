@@ -10,6 +10,8 @@ jobs:
     timeout-minutes: 30
     steps:
       - uses: actions/checkout@v3
+        with:
+          submodules: recursive
       - uses: foundry-rs/foundry-toolchain@v1
         with:
           version: nightly
