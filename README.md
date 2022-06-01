@@ -29,6 +29,8 @@
 
   - Copy ``src/scripts`` and ``src/json`` to your repository, and create a GitHub action with the script from ``mint_token.yml``.
 
+  - Edit the chain ID on line 60 of ``main.py``
+
   - Profit.
 
 # Pull Request Standard
