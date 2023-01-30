@@ -113,7 +113,11 @@ contract BadgeRenderer {
   /// @param _precision The number of decimal places to include in the string
   /// @return The formatted string
   function _formatInteger(uint256 _integerAsUint, uint256 _precision) internal pure returns (string memory) {
-
+    
+    if (_integerAsUint == 0) {
+      return "0";
+    }
+    
     // calculate the length of _integerAsUint
     uint256 len;
     uint256 j = _integerAsUint;
