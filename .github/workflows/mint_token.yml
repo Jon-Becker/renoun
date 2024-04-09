@@ -1,7 +1,7 @@
 name: Mint GitHub Badge
 
 on:
-  pull_request:
+  pull_request_target:
     branches:
       - 'main'
     types:
@@ -37,10 +37,10 @@ jobs:
           COMMIT_HASH: ${{ github.event.pull_request.merge_commit_sha }}
           PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
           PULL_REQUEST_ID: ${{ github.event.pull_request.number }}
-          REPOSITORY_STARS: ${{ github.event.pull_request.head.repo.stargazers_count }}
+          REPOSITORY_STARS: ${{ github.event.pull_request.base.repo.stargazers_count }}
           PULL_REQUEST_BODY: ${{ github.event.pull_request.body }}
           PULL_REQUEST_TITLE: ${{ github.event.pull_request.title }}
-          REPOSITORY_CONTRIBUTORS: ${{ github.event.pull_request.head.repo.watchers }}
+          REPOSITORY_CONTRIBUTORS: ${{ github.event.pull_request.base.repo.subscribers_count }}
           RENOUN_DEPLOYMENT_ADDRESS: ${{ secrets.DEPLOYMENT_ADDRESS }}
           PULL_REQUEST_CREATOR_USERNAME: ${{ github.event.pull_request.user.login }}
           PULL_REQUEST_CREATOR_PICTURE_URL: ${{ github.event.pull_request.user.avatar_url }}

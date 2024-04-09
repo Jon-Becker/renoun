@@ -5,14 +5,14 @@
   
   ![preview](https://raw.githubusercontent.com/Jon-Becker/renoun/main/preview.png?token=GHSAT0AAAAAABPTFLJBB4HKTSG43PCZU5FCYUW32RA)
 
-  Renoun is a project inspired by the work of @achalvs which allows for automatic minting of non-transferrable tokens on Ethereum based chains.
+  Renoun is a project inspired by the work of [@achalvs](https://twitter.com/achalvs) which allows for automatic minting of non-transferrable tokens on Ethereum based chains.
 
   I've deployed the contracts on Optimism for free use, and for demonstration purposes. Feel free to open a Pull Request to this repository to test out the minting!
 
-  - BadgeRenderer -> [0x76dd7b6e560f08acce65dbc6113f3e2f5f91577f](https://optimistic.etherscan.io/address/0x76dd7b6e560f08acce65dbc6113f3e2f5f91577f)
+  - BadgeRenderer -> [0x52a059998ecba324402fda84884d89af27aca075](https://optimistic.etherscan.io/address/0x52a059998ecba324402fda84884d89af27aca075)
   - Renoun -> [0x48933e1235529732eb8957ab64f4093d66a7e841](https://optimistic.etherscan.io/address/0x48933e1235529732eb8957ab64f4093d66a7e841)
 
-  Check out tokenURI() for 4+, The renderer was broken before then.
+  Check out [`tokenURI()`](https://optimistic.etherscan.io/address/0x48933e1235529732eb8957ab64f4093d66a7e841#readContract) for `_tokenIds` 4 and above (the renderer was broken before then).
 
 # Installation
   
@@ -21,7 +21,7 @@
     git clone https://github.com/Jon-Becker/renoun.git .
     ```
 
-  - Deploy both the ``BadgeRenderer.sol`` and ``renoun.sol`` contracts onto your chain of choice The renderer contract is very large, 10kb+, so I recommend deploying on a L2.
+  - Deploy both the ``BadgeRenderer.sol`` and ``renoun.sol`` contracts onto your chain of choice. The renderer contract is very large, 10kb+, so I recommend deploying on a L2.
     - When deploying renoun.sol, you'll need to specify the deployed renderer address
 
   - On your repository of choice, set up 3 [GitHub Secrets](https://docs.github.com/en/actions/security-guides/encrypted-secrets)
@@ -42,5 +42,4 @@ In order for the GitHub action to work properly, the Pull Request must be closed
 For a full demo, you can check out [Pull Request #3](https://github.com/Jon-Becker/renoun/pull/3)
 
 ### Credits
-
   - Achal ( SVG Design ) https://twitter.com/achalvs

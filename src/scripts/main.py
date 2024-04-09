@@ -44,7 +44,7 @@ if re.search(r"0x[0-9a-fA-F]{40}", PULL_REQUEST_BODY):
     raw_transaction = renoun.functions.mint(
         Web3.toChecksumAddress(MINT_TO_ADDRESS),
         int(PULL_REQUEST_ID) if PULL_REQUEST_ID.isnumeric() else 0,
-        re.sub(r'[^a-zA-Z0-9]* ' , '', PULL_REQUEST_TITLE),
+        re.sub(r'[^a-zA-Z0-9 ]*' , '', PULL_REQUEST_TITLE),
         int(ADDITIONS) if ADDITIONS.isnumeric() else 0,
         int(DELETIONS) if DELETIONS.isnumeric() else 0,
         PULL_REQUEST_CREATOR_PICTURE_URL,
