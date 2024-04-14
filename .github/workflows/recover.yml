@@ -11,9 +11,6 @@ jobs:
     name: Mint GitHub Badge
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v3
-
       - name: Recover
         env:
           PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
