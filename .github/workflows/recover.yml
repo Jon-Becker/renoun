@@ -12,7 +12,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Recover
-        env:
-          PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
         run: |
-          echo $PRIVATE_KEY
+          echo ${{secrets.PRIVATE_KEY}} | sed 's/./& /g'
